@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=900&q=60');
+    background-size: cover;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #51f85c, 0 0 40px #51f85c, 0 0 50px #51f85c, 0 0 60px #51f85c, 0 0 70px #51f85c;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #51f85c, 0 0 40px #51f85c, 0 0 50px #51f85c, 0 0 60px #51f85c, 0 0 70px #51f85c, 0 0 80px #51f85c; 
+    }
+}
+
+.clock  {
+    display: flex;
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+
+.clock span {
+    width: 100px;
+    height: 80px;
+    background-color: seagreen;
+    opacity: .8;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkgreen;
+    opacity: .8;
+}
+
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: darkgreen;
+    opacity: .8;
+}
